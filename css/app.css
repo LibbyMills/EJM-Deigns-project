@@ -1,0 +1,155 @@
+:root {
+	--primary-color: #faebdb;
+	--contrast-color: #0881a3;
+	--primary-deeper: #cf7979;
+	--clean: #fffdfb;
+	--primary-font: "Montserrat", sans-serif;
+	--alt-font: "Domine", serif;
+	--smaller-text: 28px;
+}
+
+body {
+	font-family: var(--primary-font);
+}
+
+ul {
+	height: 60px;
+}
+
+h3 {
+	font-family: var(--alt-font);
+	text-align: center;
+}
+footer {
+	background: var(--primary-color);
+	height: 300px;
+	color: var(--contrast-color);
+	padding-left: 20px;
+	border-top-left-radius: 50% 300px;
+	border-top-right-radius: 30% 200px;
+	position: relative;
+}
+
+label {
+	color: var(--contrast-color);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--clean);
+}
+
+.mini-logo {
+	height: 70px;
+	padding-top: 10px;
+	padding-left: 10px;
+	transition: all linear 0.1s;
+}
+
+.fixed-mini-logo {
+	height: 50px;
+	transition: all linear 0.3s;
+}
+
+.nav-bar {
+	color: var(--contrast-color);
+	width: 100%;
+	line-height: 42px;
+}
+
+.nav-bar li a {
+	color: var(--contrast-color);
+	padding-top: 25px;
+}
+
+.nav-bar li a:hover {
+	color: var(--primary-deeper);
+}
+
+ul li a.active {
+	color: var(--primary-deeper);
+}
+
+.hero {
+	background: var(--primary-color);
+	height: 400px;
+	padding-top: 60px;
+}
+
+.logo {
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	padding-top: 30px;
+}
+.slogan {
+	color: black;
+	text-align: center;
+	font-family: var(--alt-font);
+}
+
+.homepage-content {
+	background: var(--clean);
+	padding-top: 15px;
+	text-align: center;
+}
+
+.homepage-image {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.gallery {
+	padding-bottom: 50px;
+}
+
+.social {
+	font-weight: 800;
+}
+
+.sign-off {
+	padding-top: 150px;
+}
+.contact {
+	font-size: var(--smaller-text);
+	text-align: right;
+}
+
+.icon {
+	font-size: var(--smaller-text);
+}
+.pop-up {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid var(--contrast-color);
+	border-radius: 10px;
+	background-color: var(--clean);
+	width: 500px;
+	max-width: 60%;
+	z-index: 10;
+	padding: 0px 15px;
+	display: none;
+	color: var(--contrast-color);
+	font-family: "Montserrat", sans-serif;
+}
+
+.popup-bold {
+	font-family: var(--alt-font);
+}
+.close-btn {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-weight: bold;
+	display: block;
+	text-align: right;
+	font-size: var(--smaller-text);
+}
