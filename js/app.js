@@ -1,7 +1,9 @@
 var modal = document.getElementById("popUp");
 var modalBtn = document.getElementById("modalBtn");
 var closeBtn = document.getElementsByClassName("close-btn")[0];
+var videoBtn = document.getElementsByClassName("video-btn")[0];
 closeBtn.addEventListener("click", closeModal);
+videoBtn.addEventListener("click", videoModal);
 
 function openModal() {
 	modal.style.display = "block";
@@ -10,6 +12,10 @@ function openModal() {
 function closeModal() {
 	modal.style.display = "none";
 }
+
+window.onload = function (openModal) {
+	document.getElementById("popUp").style.display = "block";
+};
 
 $(function () {
 	$(window).scroll(function () {
@@ -21,6 +27,6 @@ $(function () {
 	});
 });
 
-window.onload = function (openModal) {
-	document.getElementById("popUp").style.display = "block";
-};
+function videoModal() {
+	document.getElementById("videoModal1").style.display = "block";
+}
