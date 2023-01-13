@@ -50,7 +50,7 @@
       />
       <h2 class="slogan">Handmade beautiful textiles, made in Cumbria 🧵</h2>
 
-      <div class="reveal pop-up" id="popUp" data-reveal>
+      <div class="reveal modal pop-up" id="popUp" data-reveal>
         <span class="btn close-btn">&times;</span>
         <h1 class="popup-bold">Welcome to our shop!</h1>
         <p class="lead">Purchase today and get free shipping!</p>
@@ -102,9 +102,17 @@
         <button class="button btn video-btn" data-open="videoModal1">
           Check out some of our work!
         </button>
-
-        <div class="reveal" id="videoModal1" data-reveal>
-         <h1 class="videoModal1">Hello World</h1>
+        <div class="reveal modal" id="videoModal1" data-reveal>
+          <span class="btn video close-btn video-close-btn">&times;</span>
+          <iframe
+            width="450"
+            height="350"
+            src="https://www.youtube.com/watch?v=GO-kHRjBlO8"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </div>
     </section>
     <footer>

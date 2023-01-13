@@ -143,21 +143,26 @@ ul li a.active {
 .icon {
 	font-size: var(--smaller-text);
 }
-.pop-up {
+
+.modal {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border: 3px solid var(--contrast-color);
 	border-radius: 10px;
 	background-color: var(--clean);
-	width: 500px;
 	max-width: 60%;
 	z-index: 10;
 	padding: 0px 15px;
 	display: none;
-	color: var(--contrast-color);
 	font-family: "Montserrat", sans-serif;
+}
+.pop-up {
+	border: 3px solid var(--contrast-color);
+	background-color: var(--clean);
+	width: 500px;
+	z-index: 10;
+	color: var(--contrast-color);
 }
 
 .popup-bold {
