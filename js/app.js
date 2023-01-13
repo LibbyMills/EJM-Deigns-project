@@ -1,5 +1,6 @@
 var modal = document.getElementById("popUp");
 var video = document.getElementById("videoModal1");
+var overlay = document.getElementById("overlay");
 var modalBtn = document.getElementById("modalBtn");
 var closeBtn = document.getElementsByClassName("close-btn")[0];
 var videoBtn = document.getElementsByClassName("video-btn")[0];
@@ -10,13 +11,20 @@ videoCloseBtn.addEventListener("click", closeVideo);
 
 function openModal() {
 	modal.style.display = "block";
+	overlay.classList.add("active");
 }
 
 function closeModal() {
 	modal.style.display = "none";
+	overlay.classList.remove("active");
+}
+function videoModal() {
+	document.getElementById("videoModal1").style.display = "block";
+	overlay.classList.add("active");
 }
 function closeVideo() {
 	video.style.display = "none";
+	overlay.classList.remove("active");
 }
 
 window.onload = function (openModal) {
@@ -32,7 +40,3 @@ $(function () {
 		}
 	});
 });
-
-function videoModal() {
-	document.getElementById("videoModal1").style.display = "block";
-}

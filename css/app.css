@@ -151,6 +151,7 @@ ul li a.active {
 	transform: translate(-50%, -50%);
 	border-radius: 10px;
 	background-color: var(--clean);
+	width: 500px;
 	max-width: 60%;
 	z-index: 10;
 	padding: 0px 15px;
@@ -160,7 +161,6 @@ ul li a.active {
 .pop-up {
 	border: 3px solid var(--contrast-color);
 	background-color: var(--clean);
-	width: 500px;
 	z-index: 10;
 	color: var(--contrast-color);
 }
@@ -180,4 +180,20 @@ ul li a.active {
 	display: block;
 	text-align: right;
 	font-size: var(--smaller-text);
+}
+
+#overlay {
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	pointer-events: none;
+}
+
+#overlay.active {
+	opacity: 1;
+	pointer-events: all;
 }
