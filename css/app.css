@@ -112,6 +112,10 @@ ul li a.active {
 	margin-top: 20px;
 }
 
+.video {
+	width: 80%;
+}
+
 .video-btn {
 	display: block;
 	margin: 00 auto;
